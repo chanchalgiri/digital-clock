@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(120, 5, 228, 0.753),rgba(20, 20, 20, 0.986));
+    color: white;
+}
+.clock{
+    width: 65%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* responsive */
+@media(max-width:480px) {
+    .clock{
+        font-size: 50px;
+    }
+}
