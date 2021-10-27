@@ -1,12 +1,11 @@
 function time(){
 
 //initization and declartion of variables
-let date = new Date();
-let h = date.getHours();
-let m = date.getMinutes();
-let s = date.getSeconds();
+var date = new Date();
+var h = date.getHours();
+var m = date.getMinutes();
+var s = date.getSeconds();
 let duration = "AM";
-let greetings = "Good Morning";
 
 //to rerun code every sec
 //using a in-built fuction
@@ -33,3 +32,27 @@ document.getElementById("digital-clock").innerHTML = h + ":"+ m + ":" + s + "  "
 }
 
 time();
+
+
+function greeting(){
+    var date = new Date();
+    var hr = date.getHours();
+
+    let msg = "Good Morning";
+
+    if(hr>=4 || hr<12){
+        msg = "Good Morning!!";
+    }
+    if(hr>=12 || hr<16){
+        msg = "Good Afternoon..";
+    }
+    if(hr>=16 || hr<19){
+        msg = "Good Evening!";
+    }
+    if(hr>=19 || hr<4){
+        msg = "Good Night!!";
+    }
+    document.getElementById("digital-greet").innerHTML = msg;
+}
+
+greeting();
